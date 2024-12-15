@@ -1,8 +1,19 @@
+# See https://redocly.com/docs/cli/configuration/ for more information.
+
+apis:
+  main@v1:
+    root: ./openapi/openapi.yaml # Define your OpenAPI spec file
+
+
+extends:
+  - recommended
+
 theme:
   openapi:
     disableSearch: true
     expandResponses: 200,202
     jsonSampleExpandLevel: 1
+    htmlTemplate: ./docs/index.html
 
     theme:
       sidebar:
@@ -15,3 +26,11 @@ theme:
         fontSize: 14pt
         headings:
           fontWeight: bold
+
+    generateCodeSamples:
+      languages:  # Array of language config objects; indicates in which languages to generate code samples.
+        - lang: curl
+        - lang: Node.js
+        - lang: JavaScript
+        - lang: PHP
+        - lang: Python
