@@ -1,10 +1,23 @@
 {
-  "name": "openapi",
+  "name": "@trexjs/openapi",
   "version": "0.0.1",
-  "description": "Node app for 6apps",
+  "description": "OpenAPI v3 specification for Trex's public API v.",
+  "homepage": "https://api.xlox.in",
   "keywords": [
-    "backend"
+    "backend",
+    "openapi",
+    "cloud",
+    "trexjs",
+    "api"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trexjs/openapi.git"
+  },
+  "author": "snrakshith",
+  "bugs": {
+    "url": "https://github.com/trexjs/openapi/issues"
+  },
   "scripts": {
     "start": "redocly preview-docs",
     "build": "redocly bundle -o dist/bundle.yaml",
