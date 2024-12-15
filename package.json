@@ -2,7 +2,7 @@
   "name": "@trexjs/openapi",
   "version": "0.0.1",
   "description": "OpenAPI v3 specification for Trex's public API v.",
-  "homepage": "https://api.xlox.in",
+  "homepage": "https://docs.xlox.in",
   "keywords": [
     "backend",
     "openapi",
