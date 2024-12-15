@@ -38,17 +38,17 @@ jobs:
 
       - name: Generate OpenAPI Docs
         run: npm run generate
-
-      - name: Rename Output File (Optional)
-        run: mv redoc-static.html index.html
-
+        
+      - name: List Files in Directory
+        run: ls -al
+        
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Generated Docs
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "index.html" # Specify the generated HTML file
+          path: "./redoc-static.html" 
 
       - name: Deploy to GitHub Pages
         id: deployment
