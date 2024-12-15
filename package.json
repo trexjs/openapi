@@ -8,11 +8,11 @@
   "scripts": {
     "start": "redocly preview-docs",
     "build": "redocly bundle -o dist/bundle.yaml",
-    "test": "redocly lint",
+    "lint": "redocly lint",
     "k6": "postman-to-k6 collection.json -o k6-script.js",
     "mock": "prism mock https://raw.githack.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore-expanded.yaml",
     "mock-server": "prism mock ./openapi/openapi.yaml",
-    "generate": "npx @redocly/cli build-docs openapi/openapi.yaml",
+    "generate": "npx @redocly/cli build-docs openapi/openapi.yaml --config ./redocly.yaml --output ./public/index.html",
     "preview": "redocly preview-docs openapi/openapi.yaml",
     "collection": "openapi2postmanv2 -s openapi/openapi.yaml -o collection.json",
     "client": "autorest --input-file=openapi/swagger.yaml --typescript --output-folder=client/ --namespace=crm",

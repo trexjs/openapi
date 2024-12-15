@@ -13,7 +13,6 @@ theme:
     disableSearch: true
     expandResponses: 200,202
     jsonSampleExpandLevel: 1
-    htmlTemplate: ./docs/index.html
 
     theme:
       sidebar:
